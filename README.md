@@ -74,10 +74,11 @@ TBD
 
 - nodejs (version >= 10.11.0)
   - Can be downloaded from [nodejs.org](https://nodejs.org).
+  - I used version 16 
 - yarn
   - Can be downloaded from [yarnpkg.com](https://yarnpkg.com).
-- python 2.7
-  - Can be downloaded from [python.org](https://www.python.org)
+- python 3.6.0
+  - Can be downloaded from [python.org](https://www.python.org/downloads/release/python-360/)
 
 For windows platform:
 - MS build tool 2017 + VC++ 2015.3 v140 toolset (x86,x64)
