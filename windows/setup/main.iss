@@ -2,7 +2,7 @@
 #if GetEnv("PLATFORM") == "x64"
     #define app "..\..\dist\win-unpacked"
 #else
-    #define app "..\..\dist\win-ia32-unpacked"
+    #define app "..\..\dist\win-unpacked"
 #endif
 
 #define platform GetEnv("PLATFORM")
