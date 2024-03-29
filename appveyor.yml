@@ -16,7 +16,7 @@ cache:
   - '%USERPROFILE%\AppData\Local\Yarn\cache'
 
 environment:
-  nodejs_version: "16.20.2"
+  nodejs_version: "18"
 
 init:
   - git config --global core.autocrlf input
@@ -32,6 +32,7 @@ init:
 
 install:
 - ps: Install-Product node $env:nodejs_version $env:PLATFORM
+- set NODE_OPTIONS=--openssl-legacy-provider
 - yarn install --frozen-lockfile --ignore-scripts
 - yarn run get all --platform win32 --arch %PLATFORM:x86=x32% -c 5 -i ./internals -m ./modules --production
 
